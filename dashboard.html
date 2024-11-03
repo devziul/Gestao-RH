@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard RH</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Dashboard de Funcionários</h2>
+    <div>
+        <h3>Adicionar Funcionários</h3>
+        <form id="funcionarioForm">
+            <input type="text" id="nome" placeholder="Nome Completo" required>
+            <input type="text" id="cpf" placeholder="CPF" required>
+            <input type="text" id="contato" placeholder="Contato" required>
+            <input type="text" id="salario" placeholder="Salário" required>
+            <button type="submit">Adicionar Funcionário</button>
+        </form>
+    </div>
+
+    <div>
+        <h3>Lista de Funcionários</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Contato</th>
+                    <th>Salário</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="funcionarioTabela">
+                <!-- Funcionarios vao ser adicionados aqui-->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>
